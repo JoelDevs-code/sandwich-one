@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  font-family: Jakarta-reg;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none; border: none;
+}
+
+
+@font-face {font-family: Jakarta-reg; src: url(../assets/font_style/PlusJakartaSans-Regular.ttf);}
+@font-face {font-family: phluff; src: url(../assets/font_style/Phluff\ Test.ttf);}
+@font-face {font-family: phluff-med; src: url(../assets/font_style/Phluff\ Test\ Medium.ttf);}
+
+
+.resources--card{
+  width: 430px; height: 231px;
+  border-radius: 20px;
+  justify-content: center;
+  border: 0.1rem rgba(139, 74, 12, 0.1) solid;
+}
+
+.r-card-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px; height: 48px;
+  background: #FF0D0114;
+}
+
+.r-card-para p{color: #666;}
+
+.lr-header-heading{font-family: phluff;}
+.lr-header-paragrapgh{color: #666;}
+
+@media (max-width: 1300px) {
+  .learning-resources-card-wrapper{flex-wrap: wrap;}
+}
+
+@media (max-width: 550px) {
+  .learning--resources{padding: 2rem 1rem;}
+ .resources--card{
+    width: 100%; height: 231px;
+    border-radius: 20px;
+    justify-content: center;
+    border: 0.1rem rgba(139, 74, 12, 0.1) solid;
+  } 
+}
